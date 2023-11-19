@@ -54,3 +54,14 @@ func Execute() {
 		fmt.Printf("Something went wrong : %s\n", err)
 	}
 }
+
+func Download(url string, path string, best bool) {
+	// initialize the arg parser variables
+
+	urls := make([]string, 1)
+	urls[0] = url
+
+	search := false
+
+	internal.Sc(urls, path, best, search)
+}
