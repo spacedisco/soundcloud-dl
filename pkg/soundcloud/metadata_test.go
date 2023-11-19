@@ -9,8 +9,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/AYehia0/soundcloud-dl/pkg/soundcloud"
 	"github.com/bogem/id3v2"
+	"github.com/spacedisco/soundcloud-dl/pkg/soundcloud"
 )
 
 func TestAddMetaData(t *testing.T) {

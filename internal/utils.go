@@ -5,9 +5,9 @@ import (
 	"os"
 	"sync"
 
-	"github.com/AYehia0/soundcloud-dl/pkg/soundcloud"
-	"github.com/AYehia0/soundcloud-dl/pkg/theme"
 	"github.com/manifoldco/promptui"
+	"github.com/spacedisco/soundcloud-dl/pkg/soundcloud"
+	"github.com/spacedisco/soundcloud-dl/pkg/theme"
 )
 
 func initValidations(url string) bool {

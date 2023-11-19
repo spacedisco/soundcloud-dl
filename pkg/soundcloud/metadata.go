@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/AYehia0/soundcloud-dl/pkg/client"
 	"github.com/bogem/id3v2"
+	"github.com/spacedisco/soundcloud-dl/pkg/client"
 )
 
 func AddMetadata(track DownloadTrack, filePath string) error {

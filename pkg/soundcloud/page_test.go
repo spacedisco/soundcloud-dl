@@ -8,7 +8,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/AYehia0/soundcloud-dl/pkg/soundcloud"
+	"github.com/spacedisco/soundcloud-dl/pkg/soundcloud"
 )
 
 var (

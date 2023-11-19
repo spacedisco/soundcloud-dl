@@ -10,7 +10,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/AYehia0/soundcloud-dl/pkg/client"
+	"github.com/spacedisco/soundcloud-dl/pkg/client"
 )
 
 type Id struct {

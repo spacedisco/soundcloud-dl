@@ -28,7 +28,7 @@ A simple CLI app written in GO used to download sound-tracks from soundcloud wit
 
 There are multiple ways to install, the easiest is :
 ```
-go install github.com/AYehia0/soundcloud-dl@latest
+go install github.com/spacedisco/soundcloud-dl@latest
 ```
 other way is to grab is the source code and build.
 

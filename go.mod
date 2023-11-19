@@ -1,9 +1,8 @@
-module github.com/spacedisco/soundcloud-downloader
+module github.com/spacedisco/soundcloud-dl
 
 go 1.19
 
 require (
-	github.com/AYehia0/soundcloud-dl v1.5.11
 	github.com/PuerkitoBio/goquery v1.8.0
 	github.com/bogem/id3v2 v1.2.0
 	github.com/fatih/color v1.13.0

@@ -6,8 +6,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/AYehia0/soundcloud-dl/internal"
-	"github.com/AYehia0/soundcloud-dl/pkg/theme"
+	"github.com/spacedisco/soundcloud-dl/internal"
+	"github.com/spacedisco/soundcloud-dl/pkg/theme"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 )

@@ -11,8 +11,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/AYehia0/soundcloud-dl/pkg/client"
 	"github.com/PuerkitoBio/goquery"
+	"github.com/spacedisco/soundcloud-dl/pkg/client"
 )
 
 var Sound *SoundData

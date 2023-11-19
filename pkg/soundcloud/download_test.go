@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/AYehia0/soundcloud-dl/pkg/soundcloud"
 	"github.com/grafov/m3u8"
+	"github.com/spacedisco/soundcloud-dl/pkg/soundcloud"
 )
 
 func TestDownload(t *testing.T) {
