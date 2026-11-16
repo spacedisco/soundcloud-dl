@@ -1,38 +1,63 @@
 <p align="center">
-    <img src="assets/go-sound.png" height="400px" width="100%" style="border-radius:8px" alt="goandsoundcloud">
+  <img src="assets/go-sound.png" width="200" alt="soundcloud-dl logo">
 </p>
 
-<h1 align="center">
-SoundCloud-dl
+<h1 align="center">soundcloud-dl</h1>
 
-![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white)
-![Sound Cloud](https://img.shields.io/badge/sound%20cloud-FF5500?style=for-the-badge&logo=soundcloud&logoColor=white)
+<p align="center"><strong>Fork of AYehia0/soundcloud-dl, re-pathed as a Go library for Space Disco tooling.</strong></p>
 
-</h1>
+<p align="center"><em>"We are going to space and we are bringing a disco."</em> 🚀🪩</p>
 
-A simple CLI app written in GO used to download sound-tracks from soundcloud with a nice UI and some cool features like downloading with multiple formats/qualities and search.
+> **Status:** Fork, 5 commits ahead of upstream for library use. · **Visibility:** public · **Language:** Go · **History:** 2022-09-17 → 2023-11-19, 58 commits
 
-# Overview
+## 🪩 What this is
 
-`soundcloud-dl` is a compiled CLI app that uses the soundcloud API to :
+Fork of the open-source `AYehia0/soundcloud-dl` CLI (download SoundCloud tracks and playlists with search, quality selection and ID3 tagging). Space Disco's 5 commits export a `Download` function and move the module path to `github.com/spacedisco/soundcloud-dl` so `spacedisco/cli` can import it.
 
-- Download tracks by URL.
-- Search in-app and download.
-- Save tracks with tags/metadata : `Artwork Image`, `Creation Date`, `Author Name`.
-- Multiple formats and qualities.
-- [Blazingly Fast](https://youtu.be/Z0GX2mTUtfo)
-- Download playlists.
-- Download user's tracks and playlists. (coming soon).
+## 🎛️ Stack
 
-# Installation
+- Go 1.19
+- cobra/pflag
+- goquery (scrapes the public client id)
+- grafov/m3u8 (HLS)
+- bogem/id3v2 tagging
+- promptui, progressbar
 
-There are multiple ways to install, the easiest is :
-```
+## 🗺️ Layout
+
+| Path | What it does |
+| --- | --- |
+| `main.go, cmd/soundcloud-dl` | CLI entry |
+| `pkg/soundcloud` | API calls, search, playlists, download |
+| `pkg/client` | HTTP client |
+| `internal/core.go` | download orchestration |
+| `testdata/` | mocked API responses and sample audio |
+| `Makefile` | run/build helpers |
+
+## 🚀 Launch sequence (local setup)
+
+```bash
 go install github.com/spacedisco/soundcloud-dl@latest
+soundcloud-dl <url> --best --download-path ./download
 ```
-other way is to grab is the source code and build.
 
-# How to use ?
+## 🛸 Deploy
+
+Library + CLI. No release workflow.
+
+## 🔌 Integrations
+
+SoundCloud public web API (`api-v2.soundcloud.com`) using a scraped client id.
+
+## 🧪 Tests & CI
+
+Go tests for URL parsing and download qualities with testdata. No CI.
+
+## 🛰️ Current state
+
+Fork, 5 commits ahead of upstream for library use. Issues are disabled on this repo (typical for forks), so improvements are tracked in the PR description and docs instead.
+
+## 🎚️ Usage (from the upstream README)
 
 Make sure to read the help menu.
 
@@ -70,3 +95,15 @@ Note : when downloading a playlist, it uses the flag `--best` to grab the best q
 <p align="center">
     <img src="assets/playlist-download.gif" style="border-radius:8px" alt="goandsoundcloud">
 </p>
+
+## 🌌 How it connects
+
+Imported as a Go library by Space Disco's internal track-import tooling.
+
+## 🙏 Credits
+
+Original project by [AYehia0](https://github.com/AYehia0/soundcloud-dl). Space Disco's changes export `Download` as a library function and move the module path.
+
+---
+
+<p align="center"><sub>Space Disco · Orbital Lounge and House Music Club · Deep, Minimal, Tech House &amp; Soulful, Groovy, Funky, Disco House.<br>Documentation refreshed November 2026 from a read of the code and history.</sub></p>
